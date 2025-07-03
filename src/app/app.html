@@ -1,0 +1,31 @@
+<nav class=" navbar navbar-expand-lg ">
+    <div class="container">
+        <div>
+            <h1  class="navbar-brand display-5 text-primary">Course 🛒</h1>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-target="#hide" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse " id="hide">
+            <ul class="navbar-nav ms-auto">
+                 <li class="nav-item"><a class="nav-link text-primary" href="">Home</a></li>
+                 <li class="nav-item"><a class="nav-link text-primary" routerLink="/about">Aboutus</a></li>
+                 <li class="nav-item"><a class="nav-link text-primary" routerLink="/contact">Contact</a></li>
+                 <li class="nav-item"><a class=" nav-link text-danger " (click)="logout()">Logout</a></li>
+                 <li class="nav-item "><a class="nav-link text-success" href="" *ngIf="username; ">{{username|titlecase}}👤</a></li> 
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<router-outlet />
+<footer class="text-center text-white bg-primary mt-5 py-3 sticky-bottom">
+  <div class="container">
+    <p class="mb-1">&copy; {{ currentYear }} Course Portal. All rights reserved.</p>
+    <div>
+      <a href="#" class="text-white me-3">Privacy</a>
+      <a href="#" class="text-white me-3">Terms</a>
+      <a href="#" class="text-white">Support</a>
+    </div>
+  </div>
+</footer>

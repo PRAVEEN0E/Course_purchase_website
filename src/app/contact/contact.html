@@ -1,0 +1,22 @@
+
+<div class="container">
+    <h1 class="text-primary display-6 text-center">Contact Us</h1>
+<form action="" [formGroup]="contact" (submit)="onsubmit()">
+    <div class="form-group">
+        <label for="" class="form-label text-primary">Name:</label>
+        <input type="text" class="form-control form-input" formControlName="name" required>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label text-primary">Email:</label>
+        <input type="email" class="form-control form-input" formControlName="email" required>
+    </div>
+     <div class="form-group">
+        <label for="" class="form-label text-primary">Command:</label>
+        <textarea name="" id="" class="form-control form-text" formControlName="message" required></textarea>
+    </div>
+    <button type="submit"[disabled]="!contact.valid" class="btn btn-primary mt-3">Submit</button>
+</form>
+<div *ngIf="done" class="alert alert-success mt-3">
+  Message submitted successfully!
+</div>
+</div>

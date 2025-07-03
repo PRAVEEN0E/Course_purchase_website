@@ -1,0 +1,19 @@
+<div class="container"  [formGroup]="signupform" (submit)="signup()">
+    <h2 class="text-center display-6 text-primary">Sign Up</h2>
+  <form action="">
+      <div class="form-group">
+        <label for="" class="form-label">UserName:</label>
+        <input type="text" class="form-control form-input" placeholder="Enter Your Username" formControlName="user" required>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label" >Password:</label>
+        <input type="password" class="form-control form-input" placeholder="Enter Your Password" formControlName="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3" [disabled]="!signupform.valid">Login</button>
+    <p class="mt-3">Did have a account?  <a routerLink="/login" class="signup">login</a> </p>
+  </form>
+  
+
+
+
+</div>

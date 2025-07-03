@@ -1,0 +1,17 @@
+.containerx{
+    margin-top: 20px;
+    background-color:whitesmoke;
+    width: 290px;
+    min-height:290px ; 
+    display: inline-block;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 20px;
+    animation:apper 2s  ease;
+
+    
+}img{
+  height: 150px;
+  width: 100%;
+}

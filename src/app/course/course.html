@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="containerx p-2 " *ngFor="let x of data">
+        <img [src]="x.img" />
+        <h4 class="mt-1 fw-bold text-primary">{{x.name}}</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, reiciendis.</p>
+       
+        <p id="dis" class="mt-3 text-danger">{{x.price|currency:'INR'}}</p>
+        <button class="btn btn-primary" (click)="view(x.id)" >Watch</button>
+        
+       </div>
+
+</div>

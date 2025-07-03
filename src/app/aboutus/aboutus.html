@@ -1,0 +1,40 @@
+<section class="py-5 ">
+  <div class="container text-center">
+    <h2 class="mb-4 hx" >About Us</h2>
+    <p class="lead">
+      Welcome to <strong>Course.com</strong> – your one-stop destination for high-quality, affordable, and practical online courses. 
+    </p>
+    <p class="px">
+      We are a passionate team of developers, educators, and tech enthusiasts who believe in empowering students with real-world skills.
+      Our goal is to make learning accessible to everyone, from beginners to professionals, through well-structured content and hands-on projects.
+    </p>
+    <p>
+      Whether you want to become a full stack developer, master data science, or explore AI – we’ve got something for you.
+      Join thousands of learners who are building their careers with us!
+    </p>
+    <p>
+      Have questions or suggestions? <a href="/contact">Contact us</a> – we’re happy to help!
+    </p>
+  </div>
+</section>
+
+
+<div class="container text-center mt-5 ">
+<div class="row">
+<div class="col-12 col-md-3" *ngFor="let x of data">
+  <div class="card mt-3 mt-md-0" >
+    <img class="card-img-top" [src]="x.img" alt="Card image">
+    <div class="card-body text-center">
+      <h4 class="card-title">{{x.name}}</h4>
+      <p class="card-text">{{x.role}}</p>
+      <a  class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+

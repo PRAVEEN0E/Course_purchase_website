@@ -1,0 +1,28 @@
+<div class="container">
+<div class="row">
+  <div class="col-12 col-md-6 order-2 order-md-2">
+    <div class="card" >
+  <div class="mt-md-4 mt-0 ">
+    <h2 class="text-primary display-6">{{selectedCourse.name}}</h2>
+<p>{{selectedCourse.description}}</p>
+<a [href]="selectedCourse.video" download class="btn btn-primary my-3">
+  Download {{selectedCourse.name}} Cheat Sheet
+</a>
+  </div>
+</div>
+
+</div>
+<div class="col-12 col-md-6 order-1 order-md-1">
+<div *ngIf="selectedCourse" >
+  <iframe
+   
+    [src]="selectedCourse.url | safe"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+</div>
+</div>
+</div>
+
+

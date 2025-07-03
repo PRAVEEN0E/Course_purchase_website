@@ -1,0 +1,23 @@
+.homediv{
+    margin-top: 4%;
+}
+.homeimg{
+    height: 100%;
+    width: 100%;
+}
+.home-text{
+    margin-top: 10%;
+}
+.second{
+    margin-top: -180px;
+}
+.cert{
+    width: 500px;
+}
+@media (max-width: 576px) {
+    .second{
+    margin-top: -50px;
+}.cert{
+    width: 300px;
+}
+}

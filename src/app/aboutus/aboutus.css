@@ -1,0 +1,19 @@
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover; 
+   
+}
+section {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hx {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.px {
+  font-size: 18px;
+  color: #333;
+}

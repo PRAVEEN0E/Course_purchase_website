@@ -1,0 +1,37 @@
+.form-input{
+    width:400px;
+}
+html, body {
+  height: 100%;
+  
+}
+.container{
+    margin-top: 7%;
+    margin-bottom: 10%;
+    width: 450px;
+    padding: 30px;
+    border-radius:5px;
+    background-color: whitesmoke;
+}
+button{
+    margin-left: 43%;
+}
+.signup{
+    text-decoration: none;
+}
+@media (max-width: 576px) {
+    .form-input{
+    width:250px;
+}
+
+.container{
+    width: 300px;
+    padding: 20px;
+    border-radius:5px;
+    background-color: whitesmoke;
+}
+button{
+    margin-left: 35%;
+}
+
+}

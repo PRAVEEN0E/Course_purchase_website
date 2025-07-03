@@ -1,0 +1,31 @@
+.form-input{
+    width:400px;
+}
+
+.container{
+    width: 450px;
+    padding: 30px;
+    border-radius:5px;
+    background-color: whitesmoke;
+    margin-top: 7%;
+    margin-bottom: 12%;
+}
+button{
+    margin-left: 43%;
+}
+@media (max-width: 576px) {
+    .form-input{
+    width:250px;
+}
+
+.container{
+    width: 300px;
+    padding: 20px;
+    border-radius:5px;
+    background-color: whitesmoke;
+}
+button{
+    margin-left: 35%;
+}
+
+}

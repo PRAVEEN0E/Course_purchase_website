@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <h2 class="text-primary display-6">Welcome back cheif🔥</h2>
+
+
+    <table class="table table-bordered mt-5">
+           <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Command</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr *ngFor="let x of data">
+                <td>{{x.name|titlecase}}</td>
+                <td>{{x.email}}</td>
+                <td>{{x.message|titlecase}}</td>
+            </tr>
+           </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+           <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Password</th>
+                
+            </tr>
+           </thead>
+           <tbody>
+            <tr *ngFor="let x of user">
+                <td>{{x.user}}</td>
+                <td>{{x.password}}</td>
+                
+            </tr>
+           </tbody>
+    </table>
+</div>
