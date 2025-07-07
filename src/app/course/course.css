@@ -11,7 +11,13 @@
     animation:apper 2s  ease;
 
     
-}img{
+}
+img{
   height: 150px;
   width: 100%;
+}
+@media (max-width: 576px) {
+  .containerx{
+    margin-left: 4.5%;
+  }
 }

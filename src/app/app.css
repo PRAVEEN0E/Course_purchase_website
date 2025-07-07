@@ -19,5 +19,14 @@ html, body {
   height: 100%;
   
 }
-
+@media (max-width: 576px) {
+  html, body {
+  height: 100%;
+  
+}
+  footer{
+    position:static;
+    bottom: 0px;
+  }
+}
 
